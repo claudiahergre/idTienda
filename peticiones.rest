@@ -1,0 +1,64 @@
+
+
+##########################
+##     API PRODUCTS     ##
+##########################
+
+
+GET http://localhost:3000/api/products
+###
+
+GET http://localhost:3000/api/products/64a6d39b38bf7e6d33e27850
+###
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "nombre": "libreta Charuca",
+    "descripcion": "libreta de notas",
+    "precio": 23,
+    "disponible": true,
+   "stock":34,
+    "departamento": "papeleria"
+}
+###
+
+PUT http://localhost:3000/api/products/64a6d4f7c2037205735ab3ab
+Content-Type: application/json
+
+{
+    "nombre": "estuche jordy lavanda",
+    "descripcion": "estuche con dos compartimentos",
+    "precio": 8,
+    "disponible": false,
+   "stock":0,
+    "departamento": "papeleria"
+}
+###
+
+DELETE http://localhost:3000/api/products/64a7d038b57573dcd031a54a
+###
+
+
+#########################
+##      API USERS      ##
+#########################
+
+
+GET http://localhost:3000/api/users
+###
+
+
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Sofia",
+    "email": "ines@correito.com",
+    "password": "jejeje",
+    "role": "regular"
+}
+###
+
+PUT http://localhost:3000/api/users/64a7e0d515f0fc52210c0213/buy/64a6d4f7c2037205735ab3ab
